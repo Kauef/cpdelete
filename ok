@@ -1,0 +1,20 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[req_distinguished_name]
+C = US
+ST = Ohio
+L = Columbus
+O = Cybersylum
+OU = Cybersylum Labs
+CN = synology-1512.cybersylum.com
+
+[req_ext]
+subjectAltName = @alt_names
+
+[alt_names]
+IP.1 = 192.168.4.3
+DNS.1 = synology-1512.cybersylum.com
+DNS.2 = synology-1512
